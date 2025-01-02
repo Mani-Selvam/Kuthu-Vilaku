@@ -1,0 +1,56 @@
+#one {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+#two {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#MuteButton::before {
+    content: '🔇';
+}
+
+#MuteButton.muted::before {
+    content: '🔈';
+}
+
+#MuteButton {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    color: #fff;
+    z-index: 5;
+    font-size: 2rem;
+    border-radius: 2rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.fire {
+    position: absolute;
+    top: 60%;
+    padding: 30px 30px;
+    left: 49%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
